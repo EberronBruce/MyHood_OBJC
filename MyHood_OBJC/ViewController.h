@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PostCell.h"
+#import "Post.h"
+#import "DataService.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
+    
+    DataService *myDataService;
+}
 
 
 @end

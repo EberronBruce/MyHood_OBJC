@@ -13,6 +13,10 @@
 		7A05E0361D1E05EC007EDB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A05E0341D1E05EC007EDB3A /* Main.storyboard */; };
 		7A05E0381D1E05EC007EDB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A05E0371D1E05EC007EDB3A /* Assets.xcassets */; };
 		7A05E03B1D1E05EC007EDB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A05E0391D1E05EC007EDB3A /* LaunchScreen.storyboard */; };
+		7A05E0481D1EDC9E007EDB3A /* AddPostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A05E0471D1EDC9E007EDB3A /* AddPostVC.m */; };
+		7A05E04B1D1EDCC7007EDB3A /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A05E04A1D1EDCC7007EDB3A /* Post.m */; };
+		7A05E04E1D1EDCF4007EDB3A /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A05E04D1D1EDCF4007EDB3A /* DataService.m */; };
+		7A05E0511D1EDD18007EDB3A /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A05E0501D1EDD18007EDB3A /* PostCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		7A05E0371D1E05EC007EDB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A05E03A1D1E05EC007EDB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A05E03C1D1E05EC007EDB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A05E0461D1EDC9E007EDB3A /* AddPostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostVC.h; sourceTree = "<group>"; };
+		7A05E0471D1EDC9E007EDB3A /* AddPostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostVC.m; sourceTree = "<group>"; };
+		7A05E0491D1EDCC7007EDB3A /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		7A05E04A1D1EDCC7007EDB3A /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		7A05E04C1D1EDCF4007EDB3A /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		7A05E04D1D1EDCF4007EDB3A /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		7A05E04F1D1EDD18007EDB3A /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		7A05E0501D1EDD18007EDB3A /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,13 @@
 		7A05E02A1D1E05EC007EDB3A /* MyHood_OBJC */ = {
 			isa = PBXGroup;
 			children = (
+				7A05E0421D1EDC1E007EDB3A /* Services */,
+				7A05E0431D1EDC26007EDB3A /* Model */,
+				7A05E0441D1EDC2B007EDB3A /* View */,
+				7A05E0451D1EDC34007EDB3A /* Controller */,
 				7A05E02E1D1E05EC007EDB3A /* AppDelegate.h */,
 				7A05E02F1D1E05EC007EDB3A /* AppDelegate.m */,
-				7A05E0311D1E05EC007EDB3A /* ViewController.h */,
-				7A05E0321D1E05EC007EDB3A /* ViewController.m */,
-				7A05E0341D1E05EC007EDB3A /* Main.storyboard */,
 				7A05E0371D1E05EC007EDB3A /* Assets.xcassets */,
-				7A05E0391D1E05EC007EDB3A /* LaunchScreen.storyboard */,
 				7A05E03C1D1E05EC007EDB3A /* Info.plist */,
 				7A05E02B1D1E05EC007EDB3A /* Supporting Files */,
 			);
@@ -77,6 +89,46 @@
 				7A05E02C1D1E05EC007EDB3A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A05E0421D1EDC1E007EDB3A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A05E04C1D1EDCF4007EDB3A /* DataService.h */,
+				7A05E04D1D1EDCF4007EDB3A /* DataService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		7A05E0431D1EDC26007EDB3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A05E0491D1EDCC7007EDB3A /* Post.h */,
+				7A05E04A1D1EDCC7007EDB3A /* Post.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7A05E0441D1EDC2B007EDB3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A05E0391D1E05EC007EDB3A /* LaunchScreen.storyboard */,
+				7A05E0341D1E05EC007EDB3A /* Main.storyboard */,
+				7A05E04F1D1EDD18007EDB3A /* PostCell.h */,
+				7A05E0501D1EDD18007EDB3A /* PostCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7A05E0451D1EDC34007EDB3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A05E0311D1E05EC007EDB3A /* ViewController.h */,
+				7A05E0321D1E05EC007EDB3A /* ViewController.m */,
+				7A05E0461D1EDC9E007EDB3A /* AddPostVC.h */,
+				7A05E0471D1EDC9E007EDB3A /* AddPostVC.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A05E04B1D1EDCC7007EDB3A /* Post.m in Sources */,
 				7A05E0331D1E05EC007EDB3A /* ViewController.m in Sources */,
 				7A05E0301D1E05EC007EDB3A /* AppDelegate.m in Sources */,
+				7A05E04E1D1EDCF4007EDB3A /* DataService.m in Sources */,
+				7A05E0511D1EDD18007EDB3A /* PostCell.m in Sources */,
+				7A05E0481D1EDC9E007EDB3A /* AddPostVC.m in Sources */,
 				7A05E02D1D1E05EC007EDB3A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
